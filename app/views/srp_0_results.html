@@ -1,0 +1,91 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<main id="content" role="main" class="group search two">
+  <form action="/search" method="get" accept-charset="utf-8" role="search" class="js-live-search-form">
+		    
+
+  	<div class="grid-row">
+   		<div class="column-two-thirds"> 		
+		    <div class="search-header">
+		      	<div class="searchfield">
+				  <fieldset class="search-input">
+				    <label for="search-main">
+				        <h1><span class="result-count " id="js-live-search-result-count" aria-hidden="true">
+				        0 results found</span> for: <span class="visuallyhidden">“micropig”</span>
+						</h1>
+				    </label>
+
+
+
+				    <div class="scoped-search_container">
+				    	<div class="scoped-search_control">
+				    		<span class="category">Education <span class="category_remove">&times;</span></span>
+				    	</div>
+				    	<div class="scoped-search_input">
+						    <input type="search" name="q" value="micropig" id="search-main">
+					    </div>
+				    </div>
+
+
+
+				  </fieldset>
+
+				  <fieldset class="search-submit">
+				    <button type="submit" class="button">Search</button>
+				  </fieldset>
+
+				</div>
+
+		    </div>
+		</div>
+	</div><!--  End Row -->
+
+  <hr>
+
+    <div id="results" class="js-live-search-results-block">
+      <div aria-live="assertive" class="js-aria-live-count visuallyhidden">750 found</div>
+
+
+
+<div class="results-block">
+  <div class="inner-block js-live-search-results-list">
+    
+      <ol class="results-list" id="js-live-search-results" start="1">
+            
+
+            <li>
+              <div class="panel panel-border-wide scoped-search-panel">
+                  <h3 class="heading-medium">You’re currently searching in the Education category</h3>
+                  <p>There are <span class="scoped-search-panel-results">285 results</span> for your keyword in other categories</p>
+                  <a class="">See all results on Gov.uk</a>
+              </div>
+            </li>
+
+            
+           
+      </ol>
+    
+      <!-- <ul class="previous-next-navigation">
+    
+          <li class="next">
+            <a href="/search?q=school+meals&amp;start=20">
+              Next <span class="visuallyhidden">page</span>
+              <span class="page-numbers">2 of 38</span>
+            </a>
+          </li>
+      </ul> -->
+  </div>
+</div>
+
+    </div>
+  </form>
+</main>
+
+
+
+
+{% endblock %}
+
+

@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK Scoped Search
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">GOV.UK Scoped Search</h1>
+      
+      <h3 class="heading-medium">Scope</h3>
+      <p>When a user is browsing within the {Category} and uses the search bar, the results should be scoped to content within that {Category}.</p>
+
+      <p>The user needs to understand that this filter has been applied and how to remove it to see results from {All Categories}</p>
+
+      <h3 class="heading-medium">Pages</h3>
+
+      <ul>
+      	<li><a href="srp_1"><abbr title="Search Results Page">SRP</abbr> 1 - Clearable tag</a></li>
+      	<li><a href="srp_2"><abbr title="Search Results Page">SRP</abbr> 2 - Combined input</a></li>
+        <li><a href="srp_0_results"><abbr title="Search Results Page">SRP</abbr> - 0 results page</a></li>
+      </ul>
+
+      <h3 class="heading-medium">Resources</h3>
+
+      <p><a href="https://docs.google.com/a/digital.cabinet-office.gov.uk/presentation/d/1JMsvFj0gQA9iq2rQA4aHhmk8WnPizpDNOu_BjXR7aDA/edit?usp=sharing">Deck containing more details of the design</a></p>
+
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+
+
